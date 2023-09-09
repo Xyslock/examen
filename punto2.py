@@ -3,8 +3,12 @@ notas_estudiantes = {
     'Maria': [4.2, 3.5, 4.3],
     'Pedro': [3.9, 2.5, 4.8]
 }
+dic={}
+
 for nombre,nota in notas_estudiantes.items():
     suma =0
     for promedio in nota:
         suma= suma+promedio
-    print(nombre,suma/len(nota))
+        prome=suma / len(nota)
+        dic[nombre] = prome
+print(dic)
